@@ -1,0 +1,12 @@
+{
+  "name": "OffyAI",
+  "short_name": "OffyAI",
+  "description": "Local AI Desktop Assistant for Windows",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0a0b0f",
+  "theme_color": "#0a0b0f",
+  "icons": [
+    { "src": "favicon.svg", "type": "image/svg+xml", "sizes": "any" }
+  ]
+}

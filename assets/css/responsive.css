@@ -1,0 +1,191 @@
+/* ==========================================================================
+   Responsive rules — mobile-first overrides
+   ========================================================================== */
+
+/* Tablet and below (<=1024px) */
+@media (max-width: 1024px) {
+  .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+  .hero-mockup { order: -1; }
+  .mockup-window { transform: none; }
+  .card-grid { grid-template-columns: repeat(2, 1fr); }
+  .privacy-grid { grid-template-columns: repeat(2, 1fr); }
+  .timeline { grid-template-columns: repeat(2, 1fr); }
+  .timeline-step:nth-child(2)::after { display: none; }
+  .req-grid { grid-template-columns: repeat(2, 1fr); }
+  .help-grid { grid-template-columns: repeat(2, 1fr); }
+  .models-grid { grid-template-columns: 1fr; }
+  .download-details { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .footer-brand { grid-column: 1 / -1; }
+}
+
+/* Nav collapses to hamburger (<=880px) */
+@media (max-width: 880px) {
+  .navbar {
+    position: relative;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .nav-actions {
+    margin-left: auto;
+    order: 2;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .nav-toggle {
+    display: flex;
+    order: 3;
+    margin-left: 0;
+  }
+  .nav-actions .btn, .nav-actions .nav-github { display: none; }
+  .nav-menu {
+    display: none;
+    position: fixed;
+    top: 72px;
+    left: 12px;
+    right: 12px;
+    width: auto;
+    max-width: calc(100vw - 24px);
+    overflow: visible;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px;
+    background: color-mix(in srgb, var(--surface) 96%, transparent);
+    border: 1px solid var(--border-strong);
+    border-radius: 16px;
+    padding: 10px;
+    box-shadow: var(--shadow-card);
+    transform: translateY(-10px);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: transform var(--transition), opacity var(--transition), visibility var(--transition);
+    backdrop-filter: blur(14px);
+    z-index: 120;
+  }
+  .nav-menu.open {
+    display: grid;
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+  .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 8px;
+    border-radius: 10px;
+    font-size: 0.86rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .nav-link:hover { background: var(--surface-2); }
+  .nav-menu-mobile-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    padding: 6px 2px 2px;
+    margin-top: 2px;
+    grid-column: 1 / -1;
+  }
+  .nav-menu-mobile-actions .btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 560px) {
+  .navbar { padding: 0 18px; }
+  .brand-name { font-size: 1.03rem; }
+  .nav-toggle { width: 38px; height: 38px; }
+  .theme-toggle { width: 34px; height: 34px; }
+}
+
+/* Small tablets / large phones (<=768px) */
+@media (max-width: 768px) {
+  .section { padding: 64px 0; }
+  .card-grid { grid-template-columns: 1fr; }
+  .privacy-grid { grid-template-columns: 1fr; }
+  .timeline { grid-template-columns: 1fr; }
+  .timeline-step::after { display: none; }
+  .req-grid { grid-template-columns: 1fr; }
+  .help-grid { grid-template-columns: 1fr; }
+  .showcase { grid-template-columns: 1fr; }
+  .showcase-tabs { flex-direction: row; overflow-x: auto; gap: 8px; padding-bottom: 4px; }
+  .showcase-tab { white-space: nowrap; }
+  .panel-performance { grid-template-columns: repeat(2, 1fr); }
+  .perf-dashboard { grid-template-columns: repeat(2, 1fr); }
+  .download-details { grid-template-columns: 1fr 1fr; }
+  .mockup-metrics { grid-template-columns: repeat(2, 1fr); }
+  .feature-row { grid-template-columns: 1fr; gap: 8px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+  .trust-strip { gap: 16px 22px; }
+}
+
+/* Phones (<=480px) */
+@media (max-width: 480px) {
+  .container { padding: 0 18px; }
+  .navbar { padding: 0 18px; gap: 10px; }
+  .site-header { padding: 12px 0; }
+  .hero { padding: 36px 0 24px; }
+  .hero-inner { gap: 28px; }
+  .hero-title { font-size: clamp(2.1rem, 11vw, 2.9rem); line-height: 1.04; }
+  .hero-sub { font-size: 1rem; margin-bottom: 24px; }
+  .hero-actions { flex-direction: column; align-items: stretch; }
+  .hero-actions .btn { width: 100%; }
+  .mockup-body { grid-template-columns: 1fr; }
+  .mockup-sidebar { display: none; }
+  .mockup-main { padding: 12px; }
+  .mockup-msg { max-width: 100%; }
+  .mockup-metrics { grid-template-columns: repeat(2, 1fr); }
+  .perf-dashboard { grid-template-columns: 1fr 1fr; }
+  .download-card { padding: 24px 18px; }
+  .download-details { grid-template-columns: 1fr; }
+  .download-links { flex-direction: column; align-items: center; gap: 12px; }
+  .github-stats { gap: 24px; flex-wrap: wrap; }
+  .install-steps li { padding: 12px 14px 12px 46px; }
+  .release-badge { padding: 7px 10px; font-size: 0.72rem; }
+  .trust-strip { gap: 14px 18px; }
+  .feature-row { grid-template-columns: 1fr; gap: 8px; }
+  .feature-tags { gap: 8px; }
+  .feature-tags li { flex: 1 1 calc(50% - 8px); text-align: center; }
+  .showcase { grid-template-columns: 1fr; gap: 16px; }
+  .showcase-tabs { flex-direction: row; overflow-x: auto; }
+  .showcase-tab { min-width: 94px; }
+  .panel-msg { max-width: 100%; }
+  .setting-row { align-items: flex-start; flex-direction: column; gap: 8px; }
+  .github-links { flex-direction: column; gap: 12px; }
+  .footer-grid { gap: 28px; }
+}
+
+/* Small phones (<=375px / <=320px) */
+@media (max-width: 375px) {
+  .section-title { font-size: 1.5rem; }
+  .brand-name { font-size: 1.02rem; }
+  .btn-large { padding: 13px 20px; font-size: 0.94rem; }
+  .trust-item { letter-spacing: 0.05em; }
+  .showcase-tab { min-width: 84px; } 
+  .feature-tags li { flex-basis: 100%; }
+  .gh-stat-value { font-size: 1.45rem; }
+}
+
+/* Extra small phone tweaks */
+@media (max-width: 340px) {
+  .container { padding: 0 14px; }
+  .navbar { padding: 0 14px; }
+  .hero-title { font-size: 1.9rem; }
+  .mockup-model-name { font-size: 0.64rem; }
+  .metric-value { font-size: 0.74rem; }
+  .download-hint { font-size: 0.76rem; }
+}
+
+/* Large desktop refinement */
+@media (min-width: 1440px) {
+  .container { padding: 0 32px; }
+}

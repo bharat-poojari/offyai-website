@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0b0f"/>
+      <stop offset="100%" stop-color="#12121c"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5b7cfa"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#5b7cfa" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#5b7cfa" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <g stroke="#ffffff" stroke-opacity="0.05">
+    <line x1="0" y1="150" x2="1200" y2="150"/>
+    <line x1="0" y1="480" x2="1200" y2="480"/>
+  </g>
+  <g transform="translate(90,225)">
+    <circle cx="30" cy="30" r="13" fill="url(#accent)"/>
+    <g fill="none" stroke="url(#accent)" stroke-width="3" opacity="0.9">
+      <ellipse cx="30" cy="30" rx="44" ry="18"/>
+      <ellipse cx="30" cy="30" rx="44" ry="18" transform="rotate(60 30 30)"/>
+      <ellipse cx="30" cy="30" rx="44" ry="18" transform="rotate(120 30 30)"/>
+    </g>
+  </g>
+  <text x="185" y="270" font-family="Arial, sans-serif" font-size="64" font-weight="700" fill="#f3f5f7">OffyAI</text>
+  <text x="90" y="345" font-family="Arial, sans-serif" font-size="30" fill="#8b92a3">Local AI. Private by design. Powerful by default.</text>
+  <text x="90" y="400" font-family="Arial, sans-serif" font-size="22" fill="#5b7cfa">Local AI Desktop Assistant for Windows</text>
+</svg>
