@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>OffyAI 1.1.1 — Local AI Desktop App for Windows</title>
-<meta name="description" content="OffyAI 1.1.1 is a local-first Windows desktop app for chatting with compatible local models, managing model files, adding document context, and monitoring hardware performance.">
+<meta name="description" content="OffyAI 1.1.1 is a local-first Windows desktop app for chatting with compatible local models, downloading models through its library connected to the public Hugging Face API, and monitoring hardware performance.">
 <meta name="keywords" content="OffyAI, local AI desktop app, Windows AI assistant, local LLM, GGUF models, llama.cpp desktop app, offline AI assistant, private AI assistant, run LLM locally, local ChatGPT alternative, AI model manager, local AI assistant">
 <meta name="author" content="OffyAI">
 <meta name="robots" content="index, follow">
@@ -38,7 +38,7 @@
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   "name": "OffyAI",
-  "description": "OffyAI 1.1.1 is a local-first Windows desktop application for chatting with compatible local models, managing model files, adding document context, and monitoring hardware performance.",
+  "description": "OffyAI 1.1.1 is a local-first Windows desktop application for chatting with compatible local models, downloading models through its library connected to the public Hugging Face API, managing model files, and monitoring hardware performance.",
   "operatingSystem": "Windows 10, Windows 11",
   "applicationCategory": "DeveloperApplication",
   "url": "https://bharat-poojari.github.io/offyai/",
@@ -72,7 +72,8 @@
   "mainEntity": [
     {"@type":"Question","name":"What is OffyAI?","acceptedAnswer":{"@type":"Answer","text":"OffyAI is a Windows desktop application that provides a polished, ChatGPT-like interface for running compatible language models on your own machine."}},
     {"@type":"Question","name":"Is OffyAI local?","acceptedAnswer":{"@type":"Answer","text":"Yes. OffyAI is designed around local-first workflows where model execution and application data run on your machine, using a llama.cpp-compatible local runtime."}},
-    {"@type":"Question","name":"What model formats are supported?","acceptedAnswer":{"@type":"Answer","text":"OffyAI works with GGUF, BIN, and GGML model files, subject to llama.cpp compatibility."}}
+    {"@type":"Question","name":"What model formats are supported?","acceptedAnswer":{"@type":"Answer","text":"OffyAI works with GGUF, BIN, and GGML model files, subject to llama.cpp compatibility."}},
+    {"@type":"Question","name":"Can I download models in OffyAI?","acceptedAnswer":{"@type":"Answer","text":"Yes. OffyAI includes a model library connected to the public Hugging Face API, allowing you to find and download compatible models for local use."}}
   ]
 }
 </script>
@@ -326,6 +327,20 @@
             </ul>
           </div>
         </article>
+
+        <article class="feature-row">
+          <div class="feature-num">07</div>
+          <div class="feature-body">
+            <h3>Model Library</h3>
+            <p>Find and download compatible models directly in OffyAI through its connection to the public Hugging Face API.</p>
+            <ul class="feature-tags">
+              <li>Hugging Face API</li>
+              <li>Model discovery</li>
+              <li>In-app downloads</li>
+              <li>Compatible model files</li>
+            </ul>
+          </div>
+        </article>
       </div>
     </div>
   </section>
@@ -441,7 +456,7 @@
       <div>
         <p class="eyebrow">Model support</p>
         <h2 class="section-title">Built-in model support.</h2>
-        <p class="section-lead">OffyAI includes a protected default model named <strong>offyai.gguf</strong> and lets you add compatible local model files from the model manager.</p>
+        <p class="section-lead">OffyAI includes a protected default model named <strong>offyai.gguf</strong> and lets you find and download compatible models through its library connected to the public Hugging Face API.</p>
         <div class="format-chips">
           <span class="chip">GGUF</span>
           <span class="chip">Local runtime</span>
@@ -451,7 +466,8 @@
           <li>Built-in <strong>offyai.gguf</strong> model</li>
           <li>Local inference workflow</li>
           <li>Model upload and selection</li>
-          <li>Optional Hugging Face model discovery</li>
+          <li>Model library connected to the public Hugging Face API</li>
+          <li>Download compatible models in OffyAI</li>
         </ul>
         <div class="flow-steps">
           <span>Load</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -475,8 +491,8 @@
       <ol class="timeline">
         <li class="timeline-step">
           <span class="timeline-num">01</span>
-          <h3>Add a model</h3>
-          <p>Place a compatible model in the local models directory.</p>
+          <h3>Choose or download a model</h3>
+          <p>Select a compatible model from the library or place one in the local models directory.</p>
         </li>
         <li class="timeline-step">
           <span class="timeline-num">02</span>
@@ -657,6 +673,11 @@
         <div class="accordion-item">
           <h3><button class="accordion-trigger" aria-expanded="false">What model formats are supported?</button></h3>
           <div class="accordion-panel" hidden><p>GGUF, BIN, and GGML, subject to llama.cpp compatibility.</p></div>
+        </div>
+
+        <div class="accordion-item">
+          <h3><button class="accordion-trigger" aria-expanded="false">Can I download models in OffyAI?</button></h3>
+          <div class="accordion-panel" hidden><p>Yes. OffyAI includes a model library connected to the public Hugging Face API, so you can find and download compatible models for local use.</p></div>
         </div>
 
         <div class="accordion-item">

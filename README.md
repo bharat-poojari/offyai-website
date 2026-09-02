@@ -12,6 +12,7 @@ A static marketing site for **OffyAI**, a local-first Windows AI desktop applica
 
 This single-page site:
 - explains the product and local AI workflow
+- lets users discover and download compatible models through its library connected to the public Hugging Face API
 - fetches the latest Windows installer from the GitHub Releases API
 - shows live repo stats
 - renders the latest release notes safely in the browser
