@@ -7,12 +7,22 @@
 const CONFIG = {
   githubOwner: "bharat-poojari",
   githubRepo: "offyai",
-  fallbackDownloadUrl: "https://github.com/bharat-poojari/offyai/releases/download/v1.0.0/OffyAI.Setup.1.0.0.exe",
   requestTimeoutMs: 8000
 };
 
 const OffyGitHub = (() => {
   const apiBase = `https://api.github.com/repos/${CONFIG.githubOwner}/${CONFIG.githubRepo}`;
+
+  function getUrls() {
+    const repository = `https://github.com/${CONFIG.githubOwner}/${CONFIG.githubRepo}`;
+    return {
+      repository,
+      releases: `${repository}/releases`,
+      latestRelease: `${repository}/releases/latest`,
+      issues: `${repository}/issues`,
+      newIssue: `${repository}/issues/new`
+    };
+  }
 
   function withTimeout(promise, ms) {
     const controller = new AbortController();
@@ -125,5 +135,5 @@ const OffyGitHub = (() => {
     return fetchJSON(apiBase);
   }
 
-  return { getLatestRelease, getRepo, pickWindowsAsset, formatBytes, formatDate, renderSafeMarkdown, CONFIG };
+  return { getLatestRelease, getRepo, pickWindowsAsset, formatBytes, formatDate, renderSafeMarkdown, getUrls, CONFIG };
 })();

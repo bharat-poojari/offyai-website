@@ -27,7 +27,7 @@
   };
 
   let resolvedDownloadUrl = null;
-  let downloadState = "loading"; // loading | ready | fallback | unavailable
+  let downloadState = "loading";
 
   function setDownloadState(state) {
     downloadState = state;
@@ -39,10 +39,6 @@
         break;
       case "ready":
         els.downloadBtn.textContent = "Download Latest Windows Release";
-        els.downloadBtn.disabled = false;
-        break;
-      case "fallback":
-        els.downloadBtn.textContent = "Download for Windows";
         els.downloadBtn.disabled = false;
         break;
       case "unavailable":
@@ -60,11 +56,17 @@
       els.downloadBtn.textContent = "Downloading…";
       window.location.href = resolvedDownloadUrl;
       if (els.downloadHint) els.downloadHint.textContent = "Download started.";
-      setTimeout(() => setDownloadState(downloadState === "fallback" ? "fallback" : "ready"), 1800);
+      setTimeout(() => setDownloadState("ready"), 1800);
     });
   }
 
   async function init() {
+    const urls = OffyGitHub.getUrls();
+    document.querySelectorAll("[data-github-link]").forEach((link) => {
+      const target = urls[link.dataset.githubLink];
+      if (target) link.href = target;
+    });
+
     try {
       const release = await OffyGitHub.getLatestRelease();
       const asset = OffyGitHub.pickWindowsAsset(release.assets);
@@ -93,26 +95,19 @@
         if (els.downloadHint) els.downloadHint.textContent = `${asset.name} · ${OffyGitHub.formatBytes(asset.size)}`;
         setDownloadState("ready");
       } else {
-        useFallback("Windows installer not detected in the latest release.");
+        useUnavailable("Windows installer not detected in the latest release.");
       }
     } catch (err) {
-      useFallback("Release information is temporarily unavailable.");
+      useUnavailable("Release information is temporarily unavailable.");
       if (els.releaseBadgeText) els.releaseBadgeText.textContent = "Release information unavailable";
     }
 
     fetchRepoStats();
   }
 
-  function useFallback(message) {
-    const hasRealDownloadUrl = typeof OffyGitHub.CONFIG.fallbackDownloadUrl === "string"
-      && OffyGitHub.CONFIG.fallbackDownloadUrl.startsWith("https://");
-
-    if (hasRealDownloadUrl) {
-      resolvedDownloadUrl = OffyGitHub.CONFIG.fallbackDownloadUrl;
-      setDownloadState("fallback");
-    } else {
-      setDownloadState("unavailable");
-    }
+  function useUnavailable(message) {
+    resolvedDownloadUrl = null;
+    setDownloadState("unavailable");
     if (els.downloadHint) els.downloadHint.textContent = message;
     if (els.ddVersion) els.ddVersion.textContent = "Unavailable";
     if (els.ddDate) els.ddDate.textContent = "—";

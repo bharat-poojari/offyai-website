@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OffyAI — Local AI Desktop Assistant for Windows</title>
-<meta name="description" content="OffyAI is a local-first Windows AI desktop application for running compatible language models with a polished chat interface, model management, performance monitoring, and persistent local sessions.">
+<title>OffyAI 1.1.1 — Local AI Desktop App for Windows</title>
+<meta name="description" content="OffyAI 1.1.1 is a local-first Windows desktop app for chatting with compatible local models, managing model files, adding document context, and monitoring hardware performance.">
 <meta name="keywords" content="OffyAI, local AI desktop app, Windows AI assistant, local LLM, GGUF models, llama.cpp desktop app, offline AI assistant, private AI assistant, run LLM locally, local ChatGPT alternative, AI model manager, local AI assistant">
 <meta name="author" content="OffyAI">
 <meta name="robots" content="index, follow">
@@ -12,8 +12,8 @@
 <meta name="theme-color" content="#0a0b0f">
 <link rel="icon" type="image/png" href="offyai.png">
 
-<meta property="og:title" content="OffyAI — Local AI Desktop Assistant for Windows">
-<meta property="og:description" content="Run compatible language models locally with a polished chat interface, model management, and live performance monitoring.">
+<meta property="og:title" content="OffyAI 1.1.1 — Local AI Desktop App for Windows">
+<meta property="og:description" content="Chat with compatible local models, manage model files, add document context, and monitor your hardware from a focused Windows desktop app.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://bharat-poojari.github.io/offyai/">
 <meta property="og:image" content="https://bharat-poojari.github.io/offyai/assets/images/og-image.svg">
@@ -38,7 +38,7 @@
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   "name": "OffyAI",
-  "description": "OffyAI is a local-first Windows AI desktop application for running compatible language models with a polished chat interface, model management, performance monitoring, and persistent local sessions.",
+  "description": "OffyAI 1.1.1 is a local-first Windows desktop application for chatting with compatible local models, managing model files, adding document context, and monitoring hardware performance.",
   "operatingSystem": "Windows 10, Windows 11",
   "applicationCategory": "DeveloperApplication",
   "url": "https://bharat-poojari.github.io/offyai/",
@@ -96,7 +96,7 @@
       <li><a href="#faq" class="nav-link">FAQ</a></li>
       <li><a href="#download" class="nav-link">Download</a></li>
       <li class="nav-menu-mobile-actions">
-        <a href="https://github.com/bharat-poojari/offyai" class="btn btn-ghost btn-small" rel="noopener noreferrer" target="_blank">GitHub</a>
+        <a href="#" data-github-link="repository" class="btn btn-ghost btn-small" rel="noopener noreferrer" target="_blank">GitHub</a>
         <a href="#download" class="btn btn-primary btn-small">Download for Windows</a>
       </li>
     </ul>
@@ -106,7 +106,7 @@
         <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
         <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg>
       </button>
-      <a href="https://github.com/bharat-poojari/offyai" class="btn btn-ghost btn-small nav-github" rel="noopener noreferrer" target="_blank">GitHub</a>
+      <a href="#" data-github-link="repository" class="btn btn-ghost btn-small nav-github" rel="noopener noreferrer" target="_blank">GitHub</a>
       <a href="#download" class="btn btn-primary btn-small">Download for Windows</a>
     </div>
 
@@ -127,7 +127,7 @@
     </div>
     <div class="container hero-inner">
       <div class="hero-copy">
-        <a href="https://github.com/bharat-poojari/offyai/releases/latest" class="release-badge" id="releaseBadge" rel="noopener noreferrer" target="_blank">
+        <a href="#" data-github-link="latestRelease" class="release-badge" id="releaseBadge" rel="noopener noreferrer" target="_blank">
           <span class="dot" aria-hidden="true"></span>
           <span id="releaseBadgeText">Checking latest release…</span>
         </a>
@@ -137,7 +137,7 @@
           <a href="#download" class="btn btn-primary btn-large">Download for Windows</a>
           <a href="#features" class="btn btn-secondary btn-large">Explore Features</a>
         </div>
-        <a href="https://github.com/bharat-poojari/offyai" class="hero-github-link" rel="noopener noreferrer" target="_blank">
+        <a href="#" data-github-link="repository" class="hero-github-link" rel="noopener noreferrer" target="_blank">
           View on GitHub
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
@@ -189,8 +189,8 @@
     <div class="container trust-strip">
       <span class="trust-item">LOCAL-FIRST</span>
       <span class="trust-item">PRIVATE</span>
-      <span class="trust-item">GGUF SUPPORT</span>
-      <span class="trust-item">LIVE METRICS</span>
+      <span class="trust-item">GGUF · BIN · GGML</span>
+      <span class="trust-item">DOCUMENT CONTEXT</span>
       <span class="trust-item">WINDOWS DESKTOP</span>
       <span class="trust-item">LLAMA.CPP</span>
     </div>
@@ -251,7 +251,7 @@
             <ul class="feature-tags">
               <li>Multi-session chats</li>
               <li>Responsive interface</li>
-              <li>Conversation continuity</li>
+              <li>Streaming responses</li>
               <li>New conversations</li>
             </ul>
           </div>
@@ -266,7 +266,7 @@
               <li>GGUF · BIN · GGML</li>
               <li>Model discovery</li>
               <li>Model selection</li>
-              <li>Validation &amp; stale-reference handling</li>
+              <li>Validation and model discovery</li>
             </ul>
           </div>
         </article>
@@ -279,7 +279,7 @@
             <ul class="feature-tags">
               <li>CPU · RAM · GPU</li>
               <li>Tokens per second</li>
-              <li>Response time</li>
+              <li>Temperature data</li>
               <li>Performance charts</li>
             </ul>
           </div>
@@ -288,12 +288,12 @@
         <article class="feature-row">
           <div class="feature-num">04</div>
           <div class="feature-body">
-            <h3>Local History</h3>
-            <p>Your conversations stay available on your machine.</p>
+            <h3>Local sessions</h3>
+            <p>Organize, rename, pin, and remove conversations in the app.</p>
             <ul class="feature-tags">
-              <li>Persistent sessions</li>
-              <li>Local storage</li>
-              <li>Restart persistence</li>
+              <li>Session switching</li>
+              <li>Rename and pin</li>
+              <li>Delete conversations</li>
               <li>Multiple conversations</li>
             </ul>
           </div>
@@ -306,9 +306,9 @@
             <p>Control how your local AI environment behaves.</p>
             <ul class="feature-tags">
               <li>Local server URL</li>
-              <li>API configuration</li>
-              <li>Theme &amp; preferences</li>
-              <li>Model settings</li>
+              <li>Sampling controls</li>
+              <li>Theme and preferences</li>
+              <li>Runtime tuning</li>
             </ul>
           </div>
         </article>
@@ -320,7 +320,7 @@
             <p>A polished desktop application built for Windows.</p>
             <ul class="feature-tags">
               <li>Electron-based</li>
-              <li>Local runtime resources</li>
+              <li>Bundled llama-server</li>
               <li>Windows installer</li>
               <li>Desktop workflow</li>
             </ul>
@@ -348,14 +348,14 @@
             <div class="panel-chat">
               <div class="panel-msg ai">Ready. Model loaded and listening on the local runtime.</div>
               <div class="panel-msg user">Explain what changed in this diff.</div>
-              <div class="panel-msg ai">The function now validates input before writing to disk, and stale model references are cleared on load.</div>
+              <div class="panel-msg ai">The file context is attached to the conversation and the local model is ready to respond.</div>
               <div class="panel-input">Message OffyAI…</div>
             </div>
           </div>
           <div class="showcase-panel" data-panel="models" role="tabpanel" hidden>
             <div class="panel-models">
               <div class="model-row active"><span>offyai.gguf</span><span class="model-tag">Active</span></div>
-              <div class="model-row"><span>No additional models installed</span><span class="model-tag muted">Default</span></div>
+              <div class="model-row"><span>Add compatible local models</span><span class="model-tag muted">Optional</span></div>
               <div class="model-row"><span>Local runtime ready</span><span class="model-tag muted">Ready</span></div>
             </div>
           </div>
@@ -379,8 +379,8 @@
             <div class="panel-settings">
               <div class="setting-row"><span>Local server URL</span><code>http://localhost:8080</code></div>
               <div class="setting-row"><span>Theme</span><code>Dark</code></div>
-              <div class="setting-row"><span>Active model</span><code>llama-3-8b-instruct.gguf</code></div>
-              <div class="setting-row"><span>API key</span><code>•••••••••••••</code></div>
+              <div class="setting-row"><span>Context size</span><code>4096</code></div>
+              <div class="setting-row"><span>Streaming</span><code>Enabled</code></div>
             </div>
           </div>
         </div>
@@ -441,7 +441,7 @@
       <div>
         <p class="eyebrow">Model support</p>
         <h2 class="section-title">Built-in model support.</h2>
-        <p class="section-lead">OffyAI includes a default local model file named <strong>offyai.gguf</strong>, so the app is ready to use with a bundled model out of the box.</p>
+        <p class="section-lead">OffyAI includes a protected default model named <strong>offyai.gguf</strong> and lets you add compatible local model files from the model manager.</p>
         <div class="format-chips">
           <span class="chip">GGUF</span>
           <span class="chip">Local runtime</span>
@@ -450,8 +450,8 @@
         <ul class="checklist">
           <li>Built-in <strong>offyai.gguf</strong> model</li>
           <li>Local inference workflow</li>
-          <li>Performance monitoring</li>
-          <li>Conversation session persistence</li>
+          <li>Model upload and selection</li>
+          <li>Optional Hugging Face model discovery</li>
         </ul>
         <div class="flow-steps">
           <span>Load</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -462,7 +462,7 @@
       <div class="model-dir" aria-hidden="true">
         <div class="model-dir-header">models/</div>
         <div class="model-dir-item active-model">offyai.gguf</div>
-        <div class="model-dir-item muted">No extra models installed</div>
+        <div class="model-dir-item muted">Add compatible models from the model manager</div>
       </div>
     </div>
   </section>
@@ -502,14 +502,14 @@
     <div class="container">
       <p class="eyebrow">Privacy</p>
       <h2 class="section-title">Your machine. Your models. Your control.</h2>
-      <p class="section-lead">OffyAI is designed to support local AI workflows where model execution and application data remain on the user's machine, subject to the user's configuration and any external services they choose to connect.</p>
+      <p class="section-lead">OffyAI is designed to keep local inference and app data on your machine, subject to the model, runtime, and external services you choose to configure.</p>
       <div class="card-grid privacy-grid">
         <div class="card small"><p>Local model execution</p></div>
-        <div class="card small"><p>Local conversation persistence</p></div>
+        <div class="card small"><p>Local conversation sessions</p></div>
         <div class="card small"><p>Local configuration</p></div>
-        <div class="card small"><p>No mandatory cloud model dependency</p></div>
+        <div class="card small"><p>No mandatory cloud inference</p></div>
         <div class="card small"><p>User-controlled model files</p></div>
-        <div class="card small"><p>Desktop-first architecture</p></div>
+        <div class="card small"><p>Optional external integrations</p></div>
       </div>
       <p class="fine-note">API integrations, updates, downloads, or other configured external services may involve network communication.</p>
     </div>
@@ -580,9 +580,9 @@
           <div><dt>Installer size</dt><dd id="ddSize">—</dd></div>
         </dl>
         <div class="download-links">
-          <a href="https://github.com/bharat-poojari/offyai/releases" id="viewAllReleases" rel="noopener noreferrer" target="_blank">View all releases</a>
-          <a href="https://github.com/bharat-poojari/offyai" id="viewSource" rel="noopener noreferrer" target="_blank">View source on GitHub</a>
-          <a href="https://github.com/bharat-poojari/offyai/releases/tag/v1.0.0" id="viewReleaseNotes" rel="noopener noreferrer" target="_blank">View release notes</a>
+          <a href="#" data-github-link="releases" id="viewAllReleases" rel="noopener noreferrer" target="_blank">View all releases</a>
+          <a href="#" data-github-link="repository" id="viewSource" rel="noopener noreferrer" target="_blank">View source on GitHub</a>
+          <a href="#" data-github-link="latestRelease" id="viewReleaseNotes" rel="noopener noreferrer" target="_blank">View release notes</a>
         </div>
       </div>
     </div>
@@ -602,7 +602,7 @@
         <div id="changelogBody" class="changelog-body">
           <p>Release notes will appear here once fetched from GitHub.</p>
         </div>
-        <a href="https://github.com/bharat-poojari/offyai/releases/latest" id="fullReleaseNotesLink" rel="noopener noreferrer" target="_blank">View full release notes on GitHub</a>
+        <a href="#" data-github-link="latestRelease" id="fullReleaseNotesLink" rel="noopener noreferrer" target="_blank">View full release notes on GitHub</a>
       </div>
     </div>
   </section>
@@ -671,7 +671,7 @@
 
         <div class="accordion-item">
           <h3><button class="accordion-trigger" aria-expanded="false">Where are my conversations stored?</button></h3>
-          <div class="accordion-panel" hidden><p>Conversations persist locally on your machine, independent of the installer, across application restarts.</p></div>
+          <div class="accordion-panel" hidden><p>Conversation sessions are managed in the desktop app, with storage behavior determined by the app and runtime environment.</p></div>
         </div>
 
         <div class="accordion-item">
@@ -763,10 +763,10 @@
         <div class="gh-stat"><span class="gh-stat-value" id="ghIssues">—</span><span class="gh-stat-label">Open issues</span></div>
       </div>
       <div class="github-links">
-        <a href="https://github.com/bharat-poojari/offyai" rel="noopener noreferrer" target="_blank">Repository</a>
-        <a href="https://github.com/bharat-poojari/offyai/releases" rel="noopener noreferrer" target="_blank">Releases</a>
-        <a href="https://github.com/bharat-poojari/offyai/issues" rel="noopener noreferrer" target="_blank">Issues</a>
-        <a href="https://github.com/bharat-poojari/offyai/issues/new" rel="noopener noreferrer" target="_blank">Feature requests</a>
+        <a href="#" data-github-link="repository" rel="noopener noreferrer" target="_blank">Repository</a>
+        <a href="#" data-github-link="releases" rel="noopener noreferrer" target="_blank">Releases</a>
+        <a href="#" data-github-link="issues" rel="noopener noreferrer" target="_blank">Issues</a>
+        <a href="#" data-github-link="newIssue" rel="noopener noreferrer" target="_blank">Feature requests</a>
       </div>
     </div>
   </section>
@@ -778,7 +778,7 @@
       <p class="section-lead">Explore local models, monitor performance, and build an AI workflow around your own hardware.</p>
       <div class="hero-actions center">
         <a href="#download" class="btn btn-primary btn-large">Download for Windows</a>
-        <a href="https://github.com/bharat-poojari/offyai" class="btn btn-secondary btn-large" rel="noopener noreferrer" target="_blank">View on GitHub</a>
+        <a href="#" data-github-link="repository" class="btn btn-secondary btn-large" rel="noopener noreferrer" target="_blank">View on GitHub</a>
       </div>
     </div>
   </section>
@@ -804,9 +804,9 @@
     </div>
     <div class="footer-col">
       <h4>Resources</h4>
-      <a href="https://github.com/bharat-poojari/offyai" rel="noopener noreferrer" target="_blank">GitHub</a>
-      <a href="https://github.com/bharat-poojari/offyai/releases" rel="noopener noreferrer" target="_blank">Releases</a>
-      <a href="https://github.com/bharat-poojari/offyai/issues" rel="noopener noreferrer" target="_blank">Issues</a>
+      <a href="#" data-github-link="repository" rel="noopener noreferrer" target="_blank">GitHub</a>
+      <a href="#" data-github-link="releases" rel="noopener noreferrer" target="_blank">Releases</a>
+      <a href="#" data-github-link="issues" rel="noopener noreferrer" target="_blank">Issues</a>
     </div>
   </div>
   <div class="container footer-bottom">

@@ -5,7 +5,7 @@ A static marketing site for **OffyAI**, a local-first Windows AI desktop applica
 ## Project links
 
 - Repository: https://github.com/bharat-poojari/offyai
-- Latest release: https://github.com/bharat-poojari/offyai/releases/tag/v1.0.0
+- Latest release: https://github.com/bharat-poojari/offyai/releases/latest
 - GitHub Pages site: https://bharat-poojari.github.io/offyai/
 
 ## What this site does
@@ -25,7 +25,6 @@ The live repo details are already configured in `assets/js/github.js`:
 const CONFIG = {
   githubOwner: "bharat-poojari",
   githubRepo: "offyai",
-  fallbackDownloadUrl: "https://github.com/bharat-poojari/offyai/releases/download/v1.0.0/OffyAI.Setup.1.0.0.exe",
   requestTimeoutMs: 8000
 };
 ```
@@ -44,5 +43,5 @@ The page metadata and sitemap currently point to the GitHub Pages URL for this r
 ## Notes
 
 - The website prefers `.exe` Windows installer assets from the latest GitHub release.
-- If GitHub Release data is unavailable, it falls back to the configured installer URL.
+- If GitHub Release data or a Windows installer is unavailable, the download action is disabled instead of guessing an installer URL.
 - The release notes are rendered in a safe, minimal Markdown subset to avoid raw HTML injection.
