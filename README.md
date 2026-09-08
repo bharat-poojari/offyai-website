@@ -6,7 +6,7 @@ A static marketing site for **OffyAI**, a local-first Windows AI desktop applica
 
 - Repository: https://github.com/bharat-poojari/offyai
 - Latest release: https://github.com/bharat-poojari/offyai/releases/latest
-- GitHub Pages site: https://bharat-poojari.github.io/offyai/
+- Website: https://offyai.vercel.app/
 
 ## What this site does
 
@@ -38,8 +38,8 @@ This site is designed to be deployed directly to GitHub Pages from the repositor
 
 The page metadata and sitemap currently point to the GitHub Pages URL for this repository:
 
-- https://bharat-poojari.github.io/offyai/
-- https://bharat-poojari.github.io/offyai/sitemap.xml
+- https://offyai.vercel.app/
+- https://offyai.vercel.app/sitemap.xml
 
 ## Notes
 

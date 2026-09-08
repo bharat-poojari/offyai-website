@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bharat-poojari.github.io/offyai/sitemap.xml
+Sitemap: https://offyai.vercel.app/sitemap.xml
