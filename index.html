@@ -3,25 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OffyAI 1.1.1 — Local AI Desktop App for Windows</title>
-<meta name="description" content="OffyAI 1.1.1 is a local-first Windows desktop app for chatting with compatible local models, downloading models through its library connected to the public Hugging Face API, and monitoring hardware performance.">
+<title>OffyAI — Private Local AI Chat App for Windows</title>
+<meta name="description" content="Run compatible AI models privately on Windows with OffyAI, a local-first desktop app for chat, GGUF model management, document context, and hardware monitoring.">
 <meta name="keywords" content="OffyAI, local AI desktop app, Windows AI assistant, local LLM, GGUF models, llama.cpp desktop app, offline AI assistant, private AI assistant, run LLM locally, local ChatGPT alternative, AI model manager, local AI assistant">
 <meta name="author" content="OffyAI">
 <meta name="robots" content="index, follow">
+<meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <link rel="canonical" href="https://offyai.vercel.app/">
 <meta name="theme-color" content="#0a0b0f">
 <link rel="icon" type="image/png" href="offyai.png">
 
-<meta property="og:title" content="OffyAI 1.1.1 — Local AI Desktop App for Windows">
-<meta property="og:description" content="Chat with compatible local models, manage model files, add document context, and monitor your hardware from a focused Windows desktop app.">
+<meta property="og:site_name" content="OffyAI">
+<meta property="og:title" content="OffyAI — Private Local AI Chat App for Windows">
+<meta property="og:description" content="Run compatible AI models privately on Windows with local chat, GGUF model management, document context, and hardware monitoring.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://offyai.vercel.app/">
 <meta property="og:image" content="https://offyai.vercel.app/offyai.png">
+<meta property="og:image:alt" content="OffyAI logo">
+<meta property="og:locale" content="en_US">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="OffyAI — Local AI Desktop Assistant for Windows">
-<meta name="twitter:description" content="Run compatible language models locally with a polished chat interface, model management, and live performance monitoring.">
+<meta name="twitter:title" content="OffyAI — Private Local AI Chat App for Windows">
+<meta name="twitter:description" content="Run compatible AI models privately on Windows with local chat, model management, document context, and hardware monitoring.">
 <meta name="twitter:image" content="https://offyai.vercel.app/offyai.png">
+<meta name="twitter:image:alt" content="OffyAI logo">
 
 <link rel="icon" type="image/png" href="offyai.png">
 <link rel="manifest" href="site.webmanifest">
@@ -36,33 +41,45 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "OffyAI",
-  "description": "OffyAI 1.1.1 is a local-first Windows desktop application for chatting with compatible local models, downloading models through its library connected to the public Hugging Face API, managing model files, and monitoring hardware performance.",
-  "operatingSystem": "Windows 10, Windows 11",
-  "applicationCategory": "DeveloperApplication",
-  "url": "https://offyai.vercel.app/",
-  "downloadUrl": "https://github.com/bharat-poojari/offyai/releases/latest",
-  "author": {
-    "@type": "Organization",
-    "name": "OffyAI"
-  }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "OffyAI",
-  "url": "https://offyai.vercel.app/"
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "OffyAI",
-  "url": "https://offyai.vercel.app/"
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://offyai.vercel.app/#website",
+      "name": "OffyAI",
+      "url": "https://offyai.vercel.app/",
+      "description": "Private local AI chat and model management for Windows."
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://offyai.vercel.app/#organization",
+      "name": "OffyAI",
+      "url": "https://offyai.vercel.app/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://offyai.vercel.app/offyai.png"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://offyai.vercel.app/#software",
+      "name": "OffyAI",
+      "description": "A local-first Windows desktop application for private AI chat, compatible model management, document context, and hardware monitoring.",
+      "softwareVersion": "1.1.1",
+      "operatingSystem": ["Windows 10", "Windows 11"],
+      "applicationCategory": "DeveloperApplication",
+      "url": "https://offyai.vercel.app/",
+      "downloadUrl": "https://github.com/bharat-poojari/offyai/releases/latest",
+      "featureList": [
+        "Private local AI chat",
+        "GGUF, BIN, and GGML model support",
+        "Model library and downloads",
+        "Document context",
+        "Hardware performance monitoring"
+      ],
+      "publisher": {"@id": "https://offyai.vercel.app/#organization"},
+      "isPartOf": {"@id": "https://offyai.vercel.app/#website"}
+    }
+  ]
 }
 </script>
 <script type="application/ld+json">
