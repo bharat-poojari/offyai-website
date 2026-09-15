@@ -7,11 +7,15 @@
 <meta name="description" content="Run compatible AI models privately on Windows with OffyAI, a local-first desktop app for chat, GGUF model management, document context, and hardware monitoring.">
 <meta name="keywords" content="OffyAI, local AI desktop app, Windows AI assistant, local LLM, GGUF models, llama.cpp desktop app, offline AI assistant, private AI assistant, run LLM locally, local ChatGPT alternative, AI model manager, local AI assistant">
 <meta name="author" content="OffyAI">
+<meta name="application-name" content="OffyAI">
+<meta name="generator" content="OffyAI website">
 <meta name="robots" content="index, follow">
 <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <link rel="canonical" href="https://offyai.vercel.app/">
 <meta name="theme-color" content="#0a0b0f">
 <link rel="icon" type="image/png" href="offyai.png">
+<link rel="apple-touch-icon" href="offyai.png">
 
 <meta property="og:site_name" content="OffyAI">
 <meta property="og:title" content="OffyAI — Private Local AI Chat App for Windows">
@@ -19,6 +23,9 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://offyai.vercel.app/">
 <meta property="og:image" content="https://offyai.vercel.app/offyai.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
 <meta property="og:image:alt" content="OffyAI logo">
 <meta property="og:locale" content="en_US">
 
@@ -47,17 +54,63 @@
       "@id": "https://offyai.vercel.app/#website",
       "name": "OffyAI",
       "url": "https://offyai.vercel.app/",
-      "description": "Private local AI chat and model management for Windows."
+      "description": "Private local AI chat and model management for Windows.",
+      "publisher": {"@id": "https://offyai.vercel.app/#organization"},
+      "potentialAction": {
+        "@type": "ReadAction",
+        "target": "https://offyai.vercel.app/"
+      }
     },
     {
       "@type": "Organization",
       "@id": "https://offyai.vercel.app/#organization",
       "name": "OffyAI",
       "url": "https://offyai.vercel.app/",
+      "sameAs": ["https://github.com/bharat-poojari/offyai"],
       "logo": {
         "@type": "ImageObject",
-        "url": "https://offyai.vercel.app/offyai.png"
+        "url": "https://offyai.vercel.app/offyai.png",
+        "contentUrl": "https://offyai.vercel.app/offyai.png"
       }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://offyai.vercel.app/#webpage",
+      "url": "https://offyai.vercel.app/",
+      "name": "OffyAI — Private Local AI Chat App for Windows",
+      "description": "Run compatible AI models privately on Windows with local chat, GGUF model management, document context, and hardware monitoring.",
+      "isPartOf": {"@id": "https://offyai.vercel.app/#website"},
+      "about": {"@id": "https://offyai.vercel.app/#software"},
+      "inLanguage": "en-US",
+      "primaryImageOfPage": {"@id": "https://offyai.vercel.app/#primaryimage"},
+      "hasPart": [
+        {"@type": "WebPageElement", "name": "Features", "url": "https://offyai.vercel.app/#features"},
+        {"@type": "WebPageElement", "name": "Models", "url": "https://offyai.vercel.app/#models"},
+        {"@type": "WebPageElement", "name": "Performance", "url": "https://offyai.vercel.app/#performance"},
+        {"@type": "WebPageElement", "name": "Download", "url": "https://offyai.vercel.app/#download"},
+        {"@type": "WebPageElement", "name": "FAQ", "url": "https://offyai.vercel.app/#faq"}
+      ]
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://offyai.vercel.app/#primaryimage",
+      "url": "https://offyai.vercel.app/offyai.png",
+      "contentUrl": "https://offyai.vercel.app/offyai.png",
+      "caption": "OffyAI logo"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "@id": "https://offyai.vercel.app/#navigation",
+      "name": ["Home", "Features", "How It Works", "Performance", "Models", "FAQ", "Download"],
+      "url": [
+        "https://offyai.vercel.app/#home",
+        "https://offyai.vercel.app/#features",
+        "https://offyai.vercel.app/#how-it-works",
+        "https://offyai.vercel.app/#performance",
+        "https://offyai.vercel.app/#models",
+        "https://offyai.vercel.app/#faq",
+        "https://offyai.vercel.app/#download"
+      ]
     },
     {
       "@type": "SoftwareApplication",
@@ -69,6 +122,7 @@
       "applicationCategory": "DeveloperApplication",
       "url": "https://offyai.vercel.app/",
       "downloadUrl": "https://github.com/bharat-poojari/offyai/releases/latest",
+      "image": "https://offyai.vercel.app/offyai.png",
       "featureList": [
         "Private local AI chat",
         "GGUF, BIN, and GGML model support",
@@ -602,6 +656,31 @@
       <h2 class="section-title">Run OffyAI on your Windows machine.</h2>
 
       <div class="download-card">
+        <div class="download-options">
+          <a class="download-option download-option-featured" href="https://apps.microsoft.com/detail/9PDMFV489SD3?hl=en-us&gl=IN&ocid=pdpshare" rel="noopener noreferrer" target="_blank">
+            <span class="download-option-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 5.5 10.5 4v7H3v-5.5ZM13.5 3.4 21 2v9h-7.5V3.4ZM3 13h7.5v7L3 18.5V13ZM13.5 13H21v9l-7.5-1.4V13Z"/></svg>
+            </span>
+            <span class="download-option-copy">
+              <span class="download-option-kicker">Recommended</span>
+              <strong>Get it from Microsoft Store</strong>
+              <span>Easy install, updates, and a familiar Windows experience.</span>
+            </span>
+            <svg class="download-option-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="download-option" href="https://sourceforge.net/projects/offyai/#" rel="noopener noreferrer" target="_blank">
+            <span class="download-option-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+            </span>
+            <span class="download-option-copy">
+              <span class="download-option-kicker">Direct download</span>
+              <strong>Download from SourceForge</strong>
+              <span>Browse the project files and download mirror.</span>
+            </span>
+            <svg class="download-option-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <div class="download-divider"><span>or use the latest release</span></div>
         <div class="download-main">
           <button class="btn btn-primary btn-large" id="downloadBtn">Download Latest Windows Release</button>
           <p class="download-hint" id="downloadHint">Checking for the latest release…</p>
@@ -655,7 +734,7 @@
         <li><strong>Monitor</strong> performance.</li>
       </ol>
       <div class="notice-box">
-        <strong>Security note:</strong> if Windows displays a security warning, verify that you downloaded the installer from the official GitHub release before proceeding.
+        <strong>Security note:</strong> download from the Microsoft Store, SourceForge project, or official GitHub release and verify the source before proceeding.
       </div>
     </div>
   </section>
@@ -749,7 +828,7 @@
 
         <div class="accordion-item">
           <h3><button class="accordion-trigger" aria-expanded="false">Where do I download the latest version?</button></h3>
-          <div class="accordion-panel" hidden><p>Use the Download section on this page, or visit the GitHub Releases page directly.</p></div>
+          <div class="accordion-panel" hidden><p>Use the Microsoft Store for the easiest install, SourceForge to browse the project files, or the GitHub Releases page for the latest installer.</p></div>
         </div>
 
       </div>

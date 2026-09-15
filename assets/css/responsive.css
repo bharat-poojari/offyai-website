@@ -15,6 +15,7 @@
   .help-grid { grid-template-columns: repeat(2, 1fr); }
   .models-grid { grid-template-columns: 1fr; }
   .download-details { grid-template-columns: repeat(2, 1fr); }
+  .download-options { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .footer-brand { grid-column: 1 / -1; }
 }
@@ -146,6 +147,7 @@
   .mockup-metrics { grid-template-columns: repeat(2, 1fr); }
   .perf-dashboard { grid-template-columns: 1fr 1fr; }
   .download-card { padding: 24px 18px; }
+  .download-option { padding: 16px; }
   .download-details { grid-template-columns: 1fr; }
   .download-links { flex-direction: column; align-items: center; gap: 12px; }
   .github-stats { gap: 24px; flex-wrap: wrap; }

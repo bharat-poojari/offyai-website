@@ -502,6 +502,25 @@ html[data-theme="light"] .icon-moon { display: block; }
   background: var(--surface); border: 1px solid var(--border-strong); border-radius: var(--radius-lg);
   padding: 40px; box-shadow: var(--shadow-card);
 }
+.download-options { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-bottom: 28px; }
+.download-option {
+  display: flex; align-items: center; gap: 14px; min-width: 0; padding: 18px;
+  background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--radius-md);
+  transition: transform var(--transition), border-color var(--transition), background var(--transition);
+}
+.download-option:hover { transform: translateY(-2px); border-color: var(--primary); background: color-mix(in srgb, var(--surface-2) 82%, var(--primary)); }
+.download-option-featured { border-color: color-mix(in srgb, var(--primary) 55%, var(--border-strong)); background: linear-gradient(135deg, color-mix(in srgb, var(--primary) 13%, var(--surface-2)), var(--surface-2)); }
+.download-option-icon { flex: 0 0 42px; width: 42px; height: 42px; display: grid; place-items: center; border-radius: 11px; background: color-mix(in srgb, var(--primary) 18%, transparent); color: var(--primary); }
+.download-option-icon svg { width: 21px; height: 21px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.download-option-featured .download-option-icon svg { fill: currentColor; stroke: none; }
+.download-option-copy { display: flex; flex: 1; flex-direction: column; gap: 3px; min-width: 0; }
+.download-option-copy strong { font-size: 0.98rem; }
+.download-option-copy > span:last-child { color: var(--muted); font-size: 0.78rem; line-height: 1.4; }
+.download-option-kicker { color: var(--primary); font-family: var(--font-mono); font-size: 0.68rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
+.download-option-arrow { flex: 0 0 17px; width: 17px; height: 17px; fill: none; stroke: var(--muted); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; transition: transform var(--transition), stroke var(--transition); }
+.download-option:hover .download-option-arrow { transform: translateX(3px); stroke: var(--text); }
+.download-divider { display: flex; align-items: center; gap: 14px; margin: 0 0 28px; color: var(--muted); font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; }
+.download-divider::before, .download-divider::after { content: ''; flex: 1; height: 1px; background: var(--border); }
 .download-main { text-align: center; margin-bottom: 32px; }
 .download-hint { color: var(--muted); font-size: 0.88rem; margin-top: 14px; font-family: var(--font-mono); }
 .download-details {
