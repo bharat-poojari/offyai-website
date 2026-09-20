@@ -7,6 +7,6 @@
   "background_color": "#0a0b0f",
   "theme_color": "#0a0b0f",
   "icons": [
-    { "src": "offyai.png", "type": "image/png", "sizes": "any" }
+    { "src": "/offyai.png", "type": "image/png", "sizes": "512x512", "purpose": "any maskable" }
   ]
 }

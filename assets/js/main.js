@@ -36,15 +36,15 @@
     switch (state) {
       case "loading":
         els.downloadBtn.textContent = "Loading release…";
-        els.downloadBtn.disabled = true;
+        els.downloadBtn.setAttribute("aria-busy", "true");
         break;
       case "ready":
         els.downloadBtn.textContent = "Download Latest Windows Release";
-        els.downloadBtn.disabled = false;
+        els.downloadBtn.removeAttribute("aria-busy");
         break;
       case "unavailable":
-        els.downloadBtn.textContent = "Download unavailable";
-        els.downloadBtn.disabled = true;
+        els.downloadBtn.textContent = "Open Latest Windows Release";
+        els.downloadBtn.removeAttribute("aria-busy");
         break;
     }
   }
@@ -52,8 +52,9 @@
   setDownloadState("loading");
 
   if (els.downloadBtn) {
-    els.downloadBtn.addEventListener("click", () => {
-      if (!resolvedDownloadUrl || els.downloadBtn.disabled) return;
+    els.downloadBtn.addEventListener("click", (event) => {
+      if (!resolvedDownloadUrl) return;
+      event.preventDefault();
       els.downloadBtn.textContent = "Downloading…";
       window.location.href = resolvedDownloadUrl;
       if (els.downloadHint) els.downloadHint.textContent = "Download started.";
@@ -92,6 +93,7 @@
 
       if (asset) {
         resolvedDownloadUrl = asset.browser_download_url;
+        els.downloadBtn.href = resolvedDownloadUrl;
         if (els.ddName) els.ddName.textContent = asset.name;
         if (els.ddSize) els.ddSize.textContent = OffyGitHub.formatBytes(asset.size);
         if (els.downloadHint) els.downloadHint.textContent = `${asset.name} · ${OffyGitHub.formatBytes(asset.size)}`;

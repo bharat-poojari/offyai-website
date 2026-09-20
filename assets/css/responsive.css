@@ -151,6 +151,7 @@
   .download-card { padding: 22px 18px; }
   .download-heading { display: block; margin-bottom: 28px; }
   .download-platform { margin-top: 20px; padding-bottom: 0; }
+  .download-main .btn { width: 100%; min-height: 52px; touch-action: manipulation; }
   .download-badge { min-height: 96px; padding: 14px 12px; }
   .download-badge + .download-badge { border-left: 0; border-top: 1px solid var(--border); }
   .release-rail { align-items: stretch; flex-direction: column; gap: 16px; }
