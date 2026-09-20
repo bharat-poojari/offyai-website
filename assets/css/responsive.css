@@ -15,7 +15,8 @@
   .help-grid { grid-template-columns: repeat(2, 1fr); }
   .models-grid { grid-template-columns: 1fr; }
   .download-details { grid-template-columns: repeat(2, 1fr); }
-  .download-options { grid-template-columns: 1fr; }
+  .download-badges { grid-template-columns: 1fr; }
+  .download-hero { grid-template-columns: 1fr; gap: 22px; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .footer-brand { grid-column: 1 / -1; }
 }
@@ -106,6 +107,7 @@
   .brand-name { font-size: 1.03rem; }
   .nav-toggle { width: 38px; height: 38px; }
   .theme-toggle { width: 34px; height: 34px; }
+  .store-badge-link img { width: min(200px, 100%); }
 }
 
 /* Small tablets / large phones (<=768px) */
@@ -146,8 +148,13 @@
   .mockup-msg { max-width: 100%; }
   .mockup-metrics { grid-template-columns: repeat(2, 1fr); }
   .perf-dashboard { grid-template-columns: 1fr 1fr; }
-  .download-card { padding: 24px 18px; }
-  .download-option { padding: 16px; }
+  .download-card { padding: 22px 18px; }
+  .download-heading { display: block; margin-bottom: 28px; }
+  .download-platform { margin-top: 20px; padding-bottom: 0; }
+  .download-badge { min-height: 96px; padding: 14px 12px; }
+  .download-badge + .download-badge { border-left: 0; border-top: 1px solid var(--border); }
+  .release-rail { align-items: stretch; flex-direction: column; gap: 16px; }
+  .download-main { text-align: left; }
   .download-details { grid-template-columns: 1fr; }
   .download-links { flex-direction: column; align-items: center; gap: 12px; }
   .github-stats { gap: 24px; flex-wrap: wrap; }

@@ -653,37 +653,51 @@
   <section class="section download-section" id="download">
     <div class="container">
       <p class="eyebrow">Download</p>
-      <h2 class="section-title">Run OffyAI on your Windows machine.</h2>
+      <div class="download-heading">
+        <div>
+          <h2 class="section-title">Your private AI workspace starts here.</h2>
+          <p class="download-lead">Choose the Windows install that fits your workflow. OffyAI keeps your models, sessions, and inference close to your machine.</p>
+        </div>
+        <div class="download-platform"><span class="download-platform-dot"></span> Built for Windows 10 / 11</div>
+      </div>
 
       <div class="download-card">
-        <div class="download-options">
-          <a class="download-option download-option-featured" href="https://apps.microsoft.com/detail/9PDMFV489SD3?hl=en-us&gl=IN&ocid=pdpshare" rel="noopener noreferrer" target="_blank">
-            <span class="download-option-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M3 5.5 10.5 4v7H3v-5.5ZM13.5 3.4 21 2v9h-7.5V3.4ZM3 13h7.5v7L3 18.5V13ZM13.5 13H21v9l-7.5-1.4V13Z"/></svg>
-            </span>
-            <span class="download-option-copy">
-              <span class="download-option-kicker">Recommended</span>
-              <strong>Get it from Microsoft Store</strong>
-              <span>Easy install, updates, and a familiar Windows experience.</span>
-            </span>
-            <svg class="download-option-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
-          <a class="download-option" href="https://sourceforge.net/projects/offyai/#" rel="noopener noreferrer" target="_blank">
-            <span class="download-option-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
-            </span>
-            <span class="download-option-copy">
-              <span class="download-option-kicker">Direct download</span>
-              <strong>Download from SourceForge</strong>
-              <span>Browse the project files and download mirror.</span>
-            </span>
-            <svg class="download-option-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
+        <div class="download-hero">
+          <div class="download-hero-copy">
+            <span class="download-hero-kicker">Two official ways in</span>
+            <strong>Install once. Run locally.</strong>
+            <span>Get the familiar Store experience or download directly from the project mirror.</span>
+          </div>
+          <div class="download-badges" aria-label="Official download options">
+            <div class="download-badge download-badge-store">
+              <span class="download-badge-label">Recommended</span>
+              <a class="store-badge-link" href="https://apps.microsoft.com/detail/9pdmfv489sd3?referrer=appbadge&mode=full" target="_blank" rel="noopener noreferrer">
+                <img src="https://get.microsoft.com/images/en-us%20light.svg" width="200" alt="Get OffyAI from the Microsoft Store">
+              </a>
+            </div>
+            <div class="download-badge download-badge-sourceforge">
+              <span class="download-badge-label">Direct mirror</span>
+              <a href="https://sourceforge.net/projects/offyai/files/latest/download" rel="noopener noreferrer" target="_blank">
+                <img alt="Download OffyAI from SourceForge" src="https://a.fsdn.com/con/app/sf-download-button" width="276" height="48" srcset="https://a.fsdn.com/con/app/sf-download-button?button_size=2x 2x">
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="download-divider"><span>or use the latest release</span></div>
-        <div class="download-main">
-          <button class="btn btn-primary btn-large" id="downloadBtn">Download Latest Windows Release</button>
-          <p class="download-hint" id="downloadHint">Checking for the latest release…</p>
+        <div class="trust-badges" aria-label="OffyAI product details">
+          <span class="trust-badge"><span aria-hidden="true">▣</span> Windows 10 / 11</span>
+          <span class="trust-badge"><span aria-hidden="true">◉</span> Local-first AI</span>
+          <a class="trust-badge" href="#" data-github-link="repository" rel="noopener noreferrer" target="_blank"><span aria-hidden="true">↗</span> Open source</a>
+          <span class="trust-badge"><span aria-hidden="true">◆</span> GGUF support</span>
+        </div>
+        <div class="release-rail">
+          <div class="release-rail-copy">
+            <span class="download-hero-kicker">Latest release</span>
+            <strong id="ddVersionRail">Windows installer ready</strong>
+            <p class="download-hint" id="downloadHint">Checking for the latest release…</p>
+          </div>
+          <div class="download-main">
+            <button class="btn btn-primary btn-large" id="downloadBtn">Download Latest Windows Release</button>
+          </div>
         </div>
         <dl class="download-details">
           <div><dt>Latest version</dt><dd id="ddVersion">—</dd></div>

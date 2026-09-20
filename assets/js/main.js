@@ -10,6 +10,7 @@
     downloadBtn: document.getElementById("downloadBtn"),
     downloadHint: document.getElementById("downloadHint"),
     ddVersion: document.getElementById("ddVersion"),
+    ddVersionRail: document.getElementById("ddVersionRail"),
     ddDate: document.getElementById("ddDate"),
     ddName: document.getElementById("ddName"),
     ddSize: document.getElementById("ddSize"),
@@ -77,6 +78,7 @@
       if (els.releaseBadge) els.releaseBadge.href = release.html_url || els.releaseBadge.href;
 
       if (els.ddVersion) els.ddVersion.textContent = version;
+      if (els.ddVersionRail) els.ddVersionRail.textContent = `${version} · Windows installer`;
       if (els.ddDate) els.ddDate.textContent = dateStr;
 
       if (els.viewAllReleases) els.viewAllReleases.href = `${release.html_url ? release.html_url.split("/tag/")[0] : els.viewAllReleases.href}`;
@@ -110,6 +112,7 @@
     setDownloadState("unavailable");
     if (els.downloadHint) els.downloadHint.textContent = message;
     if (els.ddVersion) els.ddVersion.textContent = "Unavailable";
+    if (els.ddVersionRail) els.ddVersionRail.textContent = "Release unavailable";
     if (els.ddDate) els.ddDate.textContent = "—";
     if (els.ddName) els.ddName.textContent = "—";
     if (els.ddSize) els.ddSize.textContent = "—";
