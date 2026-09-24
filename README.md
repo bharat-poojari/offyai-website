@@ -2,7 +2,7 @@
   <img
     src="https://raw.githubusercontent.com/bharat-poojari/offyai/main/offyai.png"
     alt="OffyAI logo"
-    width="620"
+    width="75"
   />
 </p>
 
@@ -46,7 +46,7 @@ OffyAI brings a clean desktop workflow for discovering compatible models, downlo
 It is designed for people who care about **privacy, control, offline-capable workflows, and transparent local resource usage**.
 
 ---
-
+<div align="center"> <h3>OffyAI in Action</h3> <div style="display: flex; overflow-x: auto; gap: 16px; padding: 12px 0; scroll-snap-type: x mandatory;"> <img src="docs/screenshots/offyai-dashboard.png" alt="OffyAI Dashboard" width="600" style="flex: 0 0 auto; scroll-snap-align: start; border-radius: 10px;" /> <img src="docs/screenshots/offyai-models.png" alt="OffyAI Model Discovery" width="600" style="flex: 0 0 auto; scroll-snap-align: start; border-radius: 10px;" /> <img src="docs/screenshots/offyai-downloads.png" alt="OffyAI Model Downloads" width="600" style="flex: 0 0 auto; scroll-snap-align: start; border-radius: 10px;" /> <img src="docs/screenshots/offyai-settings.png" alt="OffyAI Settings" width="600" style="flex: 0 0 auto; scroll-snap-align: start; border-radius: 10px;" /> <img src="docs/screenshots/offyai-chat.png" alt="OffyAI Local AI Chat" width="600" style="flex: 0 0 auto; scroll-snap-align: start; border-radius: 10px;" /> </div> <p> <sub>← Scroll horizontally to explore OffyAI →</sub> </p> </div>
 ## Why OffyAI?
 
 Cloud AI is convenient. Local AI gives you a different kind of control.

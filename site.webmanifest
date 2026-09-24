@@ -1,12 +1,14 @@
 {
   "name": "OffyAI",
   "short_name": "OffyAI",
-  "description": "Local-first AI desktop app for Windows",
+  "description": "Private local AI chat and model management app for Windows",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#0a0b0f",
   "theme_color": "#0a0b0f",
   "icons": [
+    { "src": "/favicon-192x192.png", "type": "image/png", "sizes": "192x192", "purpose": "any" },
+    { "src": "/favicon-512x512.png", "type": "image/png", "sizes": "512x512", "purpose": "any maskable" },
     { "src": "/offyai.png", "type": "image/png", "sizes": "512x512", "purpose": "any maskable" }
   ]
 }
