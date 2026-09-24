@@ -23,7 +23,7 @@ A local-first Windows AI desktop application for discovering, managing, and inte
 <a href="https://github.com/bharat-poojari/offyai/discussions"><strong>Discussions</strong></a>
 </p>
 
-<img src="https://raw.githubusercontent.com/bharat-poojari/offyai-website/main/public/banner.png" alt="OffyAI banner" width="640" />
+<img src="https://raw.githubusercontent.com/bharat-poojari/offyai-website/main/images/banner.png" alt="OffyAI banner" width="640" />
 </div>
 
 <br>
@@ -131,16 +131,16 @@ Three official channels ship the same OffyAI release:
 
 <table>
   <tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/bharat-poojari/offyai-website/main/public/1.png" width="100%" alt="OffyAI screenshot 1" /><div align="center"><sub>Overview</sub></div></td>
-    <td width="50%"><img src="https://raw.githubusercontent.com/bharat-poojari/offyai-website/main/public/2.png" width="100%" alt="OffyAI screenshot 2" /><div align="center"><sub>Chat interface</sub></div></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/bharat-poojari/offyai-website/main/images/1.png" width="100%" alt="OffyAI screenshot 1" /><div align="center"><sub>Overview</sub></div></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/bharat-poojari/offyai-website/main/images/2.png" width="100%" alt="OffyAI screenshot 2" /><div align="center"><sub>Chat interface</sub></div></td>
   </tr>
   <tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/bharat-poojari/offyai-website/main/public/3.png" width="100%" alt="OffyAI screenshot 3" /><div align="center"><sub>Chat interface</sub></div></td>
-    <td width="50%"><img src="https://raw.githubusercontent.com/bharat-poojari/offyai-website/main/public/4.png" width="100%" alt="OffyAI screenshot 4" /><div align="center"><sub>Model Management</sub></div></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/bharat-poojari/offyai-website/main/images/3.png" width="100%" alt="OffyAI screenshot 3" /><div align="center"><sub>Chat interface</sub></div></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/bharat-poojari/offyai-website/main/images/4.png" width="100%" alt="OffyAI screenshot 4" /><div align="center"><sub>Model Management</sub></div></td>
   </tr>
   <tr>
-    <td width="50%"><img src="https://raw.githubusercontent.com/bharat-poojari/offyai-website/main/public/5.png" width="100%" alt="OffyAI screenshot 5" /><div align="center"><sub>Resource visibility</sub></div></td>
-    <td width="50%"><img src="https://raw.githubusercontent.com/bharat-poojari/offyai-website/main/public/6.png" width="100%" alt="OffyAI screenshot 6" /><div align="center"><sub>Resource visibility</sub></div></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/bharat-poojari/offyai-website/main/images/5.png" width="100%" alt="OffyAI screenshot 5" /><div align="center"><sub>Resource visibility</sub></div></td>
+    <td width="50%"><img src="https://raw.githubusercontent.com/bharat-poojari/offyai-website/main/images/6.png" width="100%" alt="OffyAI screenshot 6" /><div align="center"><sub>Resource visibility</sub></div></td>
   </tr>
 </table>
 
