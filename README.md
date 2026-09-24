@@ -5,7 +5,6 @@
     width="75"
   />
 </p>
-
 <h1 align="center">OffyAI</h1>
 
 <p align="center">
@@ -17,10 +16,32 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/bharat-poojari/offyai/releases/latest"><img src="https://img.shields.io/github/v/release/bharat-poojari/offyai?display_name=tag&sort=semver&style=for-the-badge&label=Latest%20Release" alt="Latest release"></a>
-  <a href="https://github.com/bharat-poojari/offyai/releases"><img src="https://img.shields.io/github/downloads/bharat-poojari/offyai/total?style=for-the-badge&label=Downloads" alt="Total downloads"></a>
-  <a href="https://github.com/bharat-poojari/offyai/stargazers"><img src="https://img.shields.io/github/stars/bharat-poojari/offyai?style=for-the-badge&label=Stars" alt="GitHub stars"></a>
-  <a href="https://github.com/bharat-poojari/offyai/blob/main/LICENSE"><img src="https://img.shields.io/github/license/bharat-poojari/offyai?style=for-the-badge&label=License" alt="License"></a>
+  <img
+    src="https://raw.githubusercontent.com/bharat-poojari/offyai-website/main/public/banner.png"
+    alt="OffyAI Banner"
+    width="500"
+  />
+</p>
+
+<p align="center">
+  <a href="https://github.com/bharat-poojari/offyai/releases/latest">
+    <img
+      src="https://img.shields.io/github/v/release/bharat-poojari/offyai?display_name=tag&sort=semver&style=for-the-badge&label=Latest%20Release"
+      alt="Latest release"
+    >
+  </a>
+  <a href="https://github.com/bharat-poojari/offyai/releases">
+    <img
+      src="https://img.shields.io/github/downloads/bharat-poojari/offyai/total?style=for-the-badge&label=Downloads"
+      alt="Total downloads"
+    >
+  </a>
+  <a href="https://github.com/bharat-poojari/offyai/blob/main/LICENSE">
+    <img
+      src="https://img.shields.io/github/license/bharat-poojari/offyai?style=for-the-badge&label=License"
+      alt="License"
+    >
+  </a>
 </p>
 
 <p align="center">
@@ -44,26 +65,24 @@
 OffyAI brings a clean desktop workflow for discovering compatible models, downloading and managing them, configuring local inference, and having conversations with locally available AI systems.
 
 It is designed for people who care about **privacy, control, offline-capable workflows, and transparent local resource usage**.
-
----
 <div align="center">
 
-### OffyAI in Action
+<h3>OffyAI in Action</h3>
 
-<div style="display:flex; overflow-x:auto; gap:16px; padding:16px 0;">
-
-  <img src="/1.png" alt="OffyAI Screenshot 1" width="600">
-  <img src="/2.png" alt="OffyAI Screenshot 2" width="600">
-  <img src="/3.png" alt="OffyAI Screenshot 3" width="600">
-  <img src="/4.png" alt="OffyAI Screenshot 4" width="600">
-  <img src="/5.png" alt="OffyAI Screenshot 5" width="600">
-  <img src="/6.png" alt="OffyAI Screenshot 6" width="600">
-
-</div>
-
-<sub>← Scroll horizontally to explore OffyAI →</sub>
+<table>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/bharat-poojari/offyai-website/main/public/1.png" alt="OffyAI Screenshot 1" width="2500"></td>
+    <td><img src="https://raw.githubusercontent.com/bharat-poojari/offyai-website/main/public/2.png" alt="OffyAI Screenshot 2" width="2500"></td>
+    <td><img src="https://raw.githubusercontent.com/bharat-poojari/offyai-website/main/public/3.png" alt="OffyAI Screenshot 3" width="2500"></td>
+    <td><img src="https://raw.githubusercontent.com/bharat-poojari/offyai-website/main/public/4.png" alt="OffyAI Screenshot 4" width="2500"></td>
+    <td><img src="https://raw.githubusercontent.com/bharat-poojari/offyai-website/main/public/5.png" alt="OffyAI Screenshot 5" width="2500"></td>
+    <td><img src="https://raw.githubusercontent.com/bharat-poojari/offyai-website/main/public/6.png" alt="OffyAI Screenshot 6" width="2500"></td>
+  </tr>
+</table>
 
 </div>
+---
+
 ## Why OffyAI?
 
 Cloud AI is convenient. Local AI gives you a different kind of control.
