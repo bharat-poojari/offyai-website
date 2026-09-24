@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
+Host: offyai.vercel.app
 Sitemap: https://offyai.vercel.app/sitemap.xml
