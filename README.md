@@ -46,6 +46,24 @@ OffyAI brings a clean desktop workflow for discovering compatible models, downlo
 It is designed for people who care about **privacy, control, offline-capable workflows, and transparent local resource usage**.
 
 ---
+<div align="center">
+
+### OffyAI in Action
+
+<div style="display:flex; overflow-x:auto; gap:16px; padding:16px 0;">
+
+  <img src="/1.png" alt="OffyAI Screenshot 1" width="600">
+  <img src="/2.png" alt="OffyAI Screenshot 2" width="600">
+  <img src="/3.png" alt="OffyAI Screenshot 3" width="600">
+  <img src="/4.png" alt="OffyAI Screenshot 4" width="600">
+  <img src="/5.png" alt="OffyAI Screenshot 5" width="600">
+  <img src="/6.png" alt="OffyAI Screenshot 6" width="600">
+
+</div>
+
+<sub>← Scroll horizontally to explore OffyAI →</sub>
+
+</div>
 ## Why OffyAI?
 
 Cloud AI is convenient. Local AI gives you a different kind of control.
